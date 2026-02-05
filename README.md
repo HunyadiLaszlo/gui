@@ -1,4 +1,5 @@
 Microsoft.EntityFrameworkCore.Tools
+
 MySql.EntityFrameworkCore
 
 Scaffold-DbContext "server=localhost;database=db neve;user=root;" Mysql.EntityFrameworkCore -Project project neve
