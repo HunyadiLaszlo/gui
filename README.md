@@ -136,7 +136,7 @@ MainWindows.xaml
 ********************************************
 Iskola
 ********************************************
-VIEWMODEL.css
+ViewMosel.cs
 
 ////Egyirányú adatkötés
 
