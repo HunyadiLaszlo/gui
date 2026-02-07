@@ -131,3 +131,33 @@ MainWindows.xaml
 
     </Grid>
 </Window>
+
+
+********************************************
+Iskola
+********************************************
+VIEWMODEL.css
+
+////Egyirányú adatkötés
+
+namespace iskola_gui
+{
+    public class ViewModel
+    {
+        public ObservableCollection<Student> Students { get; set; }
+        public ObservableCollection<SchoolClass> SchoolClasses { get; set; }
+
+        public Student Kivalasztott { get; set; }
+               
+        public ViewModel()
+        {
+            using WpfIskolaContext adatbazis = new WpfIskolaContext();
+            Students = new (adatbazis.Students); 
+            SchoolClasses = new (adatbazis.SchoolClasses); 
+        }
+    }
+}
+
+
+
+
